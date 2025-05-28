@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <style src="/src/style.css"></style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokay Play</title>
+</head>
+
+<body>
+  <div class="logo">
+    <img id="logo" src="tokay.svg" alt="Tokay Programming Language Logo">
+  </div>
+
+  <div id="program">
+    <div class="row">
+      <div class="col">
+        <label for="code">Code</label>
+        <textarea id="code" placeholder="Code" required wrap="off"></textarea>
+      </div>
+      <div class="col">
+        <label for="input">Input</label>
+        <textarea id="input" placeholder="Input (optional)" wrap="off">1+2*3+4</textarea>
+      </div>
+    </div>
+
+    <button id="submit" type="submit">Run</button>
+
+    <div class="col">
+      <label for="output">Output</label>
+      <div id="output"></div>
+    </div>
+  </div>
+
+  <button id="toggle-theme" aria-label="Toggle dark mode"></button>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
