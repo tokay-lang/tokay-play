@@ -48,7 +48,8 @@ Expr : @{
     Term
 }
 
-Expr`.trim();
+print(Expr)
+`.trim();
 
 document
   .getElementById("submit")
@@ -56,12 +57,16 @@ document
     let output = document.getElementById("output");
 
     output.innerHTML = "";
-    output.appendChild(
-      document.createTextNode(
-        run(
-          document.getElementById("code").value,
-          document.getElementById("input").value,
-        ),
-      ),
+
+    let res = run(
+      document.getElementById("code").value,
+      document.getElementById("input").value,
+      msg => {
+        output.appendChild(document.createTextNode(msg));
+      },
     );
+
+    if (res) {
+      output.appendChild(document.createTextNode(res));
+    }
   });

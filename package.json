@@ -12,7 +12,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "tokay": "0.6.8",
+    "tokay": "^0.6.10",
     "vite-plugin-wasm": "^3.4.1"
   }
 }
