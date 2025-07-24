@@ -117,3 +117,8 @@ button {
   cursor: pointer;
   width: 100%;
 }
+
+#code {
+  height: 100%;
+  margin: 0;
+}
