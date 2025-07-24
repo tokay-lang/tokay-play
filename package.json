@@ -12,6 +12,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
+    "monaco-editor": "^0.52.2",
     "tokay": "^0.6.10",
     "vite-plugin-wasm": "^3.4.1"
   }
