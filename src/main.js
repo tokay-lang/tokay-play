@@ -123,7 +123,7 @@ const editor = monaco.editor.create(document.getElementById("code"), {
 
 // Tokay ------------------------------------------------------------------------------------------
 
-import { enable_logging, run } from "tokay";
+import { enable_logging, run, version } from "tokay";
 
 enable_logging();
 
@@ -131,7 +131,7 @@ document
   .getElementById("submit")
   .addEventListener("click", (e) => {
     let output = document.getElementById("output");
-    output.innerHTML = "";
+    output.innerHTML = version() + "<br>";
 
     let res = run(
       editor.getValue(),
